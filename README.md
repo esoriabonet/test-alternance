@@ -17,7 +17,7 @@ Voici les commandes pour générer la base de données que j'ai utilisées
 CREATE DATABASE irtnetworkshop;
 USE irtnetworkshop;
 
-CREATE TABLE produit (
+CREATE TABLE article (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nom_article VARCHAR(255),
   prix_achat DECIMAL(10,2),
