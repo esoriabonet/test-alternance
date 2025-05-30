@@ -1,11 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 include "db.php";
 
-$requete_sql = "SELECT * FROM produit";
+$requete_sql = "SELECT * FROM article";
 $result = $conn->query($requete_sql);
 $produits = [];
 while ($row = $result->fetch_assoc()) {
