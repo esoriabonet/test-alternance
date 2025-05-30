@@ -3,9 +3,9 @@ include "db.php";
 
 $requete_sql = "SELECT * FROM article";
 $result = $conn->query($requete_sql);
-$produits = [];
+$articles = [];
 while ($row = $result->fetch_assoc()) {
-    $produits[] = $row;
+    $articles[] = $row;
 }
 $conn->close();
 ?>
@@ -22,9 +22,9 @@ $conn->close();
         <h2>Choix des articles</h2>
         <select id="select-article">
             <option value="">-- Choisir un article --</option>
-            <?php foreach ($produits as $produit): ?>
-                <option value='<?php echo json_encode($produit); ?>'>
-                    <?php echo htmlspecialchars($produit["nom_article"]); ?>
+            <?php foreach ($articles as $article): ?>
+                <option value='<?php echo json_encode($article); ?>'>
+                    <?php echo htmlspecialchars($article["nom_article"]); ?>
                 </option>
             <?php endforeach; ?>
         </select>
