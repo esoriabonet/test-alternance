@@ -8,14 +8,14 @@ Sur cette application web on y trouve une liste déroulante avec tous les articl
 
 ## Ressources utilisées
 
-J'ai travaillé sur le système d'exploitation ubuntu 20.04.6
-J'ai hébergé le serveur avec Apache.
-J'ai utilisé la version 8.3.6 de php.
+J'ai travaillé sur le système d'exploitation ubuntu 20.04.6.\
+J'ai hébergé le serveur avec Apache.\
+J'ai utilisé la version 8.3.6 de php.\
 J'ai utilisé une base de données MySQL.
 
 ## Base de données
 
-Voici les commandes pour générer la base de données que j'ai utilisées
+Voici les commandes j'ai utilisées pour générer la base de données
 
 ```mysql
 CREATE DATABASE irtnetworkshop;
@@ -29,7 +29,7 @@ CREATE TABLE article (
 );
 ```
 
-Voici les commandes pour créer un utilisateur que j'ai utilisées
+Voici les commandes que j'ai utilisées pour créer un utilisateur
 
 ```mysql
 CREATE USER 'irtnetwork_user'@'localhost' IDENTIFIED BY 'M0T2passe@@!';
